@@ -61,11 +61,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/com.motorola.cameraone.xml:system/etc/permissions/com.motorola.cameraone.xml
 
-# CMActions
-PRODUCT_PACKAGES += \
-    CMActions \
-    libjni_CMActions
-
 # Display
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := 560dpi
@@ -89,9 +84,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/releasetools/extract_firmware.sh:install/bin/extract_firmware.sh
 
-# Gello
-PRODUCT_PACKAGES += \
-    Gello
+# Telephony-ext
+PRODUCT_PACKAGES += telephony-ext
+PRODUCT_BOOT_JARS += telephony-ext
 
 # GPS
 PRODUCT_PACKAGES += \
